@@ -1,0 +1,518 @@
+/* CSS Document */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* RESTORE SOME STYLING */
+
+ul {
+list-style-type: disc;
+list-style-position: inside;
+}
+ol {
+list-style-type: decimal;
+list-style-position: inside;
+}
+ul ul, ol ul {
+list-style-type: circle;
+list-style-position: inside;
+margin-left: 2em;
+}
+ol ol, ul ol {
+list-style-type: lower-latin;
+list-style-position: inside;
+margin-left: 2em;
+}
+strong {
+font-weight: bold;
+}
+em {
+font-style: italic;
+}
+
+/* Styling for MOBILE FIRST here: */
+html {
+	font-size: 100%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,2b0324+48,2b0324+100 */
+	background: #000000; /* Old browsers */
+	background: -moz-linear-gradient(top, #000000 0%, #2b0324 48%, #2b0324 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #000000 0%,#2b0324 48%,#2b0324 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #000000 0%,#2b0324 48%,#2b0324 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#2b0324',GradientType=0 ); /* IE6-9 */
+}
+body {
+	background-color: #fff;
+	font: 100%/1.4 Arial, Helvetica, sans-serif;
+}
+main {
+	margin: 0 1rem;
+}
+img {
+	width: 100%;
+	display: block;
+}
+.intro-stuff img {
+	max-width: 513px;
+	margin-bottom: .5rem;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+p {
+	font-family: Georgia, Times, "Times New Roman", serif;
+}
+.special {
+	font-weight: bold;
+	color: #502847;
+}
+/* LINKS STYLING */
+a {
+	font-family: 'Cabin', sans-serif;
+	cursor: pointer;
+}
+/* navigation links */
+nav ul {
+	padding: .5rem 0;
+	list-style-type: none;
+	margin: 0 1rem;
+}
+nav ul li a {
+	border: solid 1px #502847;
+	padding: .25rem;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #fff;
+	color: #502847;
+	transition: background-color .5s ease-in-out .01s, color .5s ease-in-out .01s;
+}
+nav ul li a:visited {
+	color: #7e5f94;
+}
+nav ul li a:hover {
+	color: #fff;
+	background-color: #502847;
+}
+nav ul li a:active {
+	color: #c83acb;
+}
+/* email links in bio section */
+.third a {
+	color: #555;
+}
+.third a:visited{
+	color: #7e5f94;
+}
+.third a:hover {
+	color: #502847;
+}
+.third a:active {
+	color: #c83acb;
+}
+/* links in contact info section */
+.contactlinks a{
+	color: #fff;
+}
+.contactlinks a:visited{
+	color: #7e5f94;
+}
+.contactlinks a:hover{
+	color: #502847;
+}
+.contactlinks a:active{
+	color: #c83acb;
+}
+/* back to top link at bottom of page */
+.backtotop {
+	font-size: .75rem;
+	padding-top: .5rem;
+	text-align: right;
+}
+.backtotop a {
+	color: #502847;
+}
+.backtotop a:visited {
+	color: #7e5f94;
+}
+.backtotop a:hover {
+	color: #fff;
+}
+.backtotop a:active {
+	color: #c83acb;
+}
+/* contact us link in the clients panel of the what we offer section */
+.link a {
+	color: #502847;
+}
+.link a:visited {
+	color: #7e5f94;
+}
+.link a:hover {
+	color: #fff;
+}
+.link a:active {
+	color: #c83acb;
+}
+
+
+/* HEADER */
+header{
+	background-color: #fff;
+	text-align: center;
+}
+h1{
+	font-size: 1.75rem;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	line-height: 1.2;
+	color: #333;
+}
+h2{
+	font-size: 1.95rem;
+	padding-bottom: .75rem;
+	color: #2f0024;
+	font-family: 'Alegreya Sans SC', sans-serif;
+}
+header svg {
+	width: 25%;
+	margin: 0 auto;
+	display: block;
+}
+header figure {
+	padding: .75rem 0 .5rem 0;
+}
+
+/* CALL TO ACTION */
+.calltoaction {
+	color: #2f0024;
+	font-size: 1.5rem;
+	margin-top: 1rem;
+	text-align: center;
+	font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+/* OUR COMPANY */
+.intro h3{
+	color: #333;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 1.5rem;
+	padding-bottom: .5rem;
+	margin-top: 1rem;
+}
+.intro-stuff{
+ padding: .75rem;
+}
+.intro-stuff p{
+ 	padding: 0 0 .5rem .5rem;
+}
+
+/* WHAT WE OFFER */
+.second h3 {
+	color: #333;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 1.5rem;
+	padding-bottom: .5rem;
+	margin-top: 1rem;
+}
+.second h4{
+	color: #fff;
+	font-family: 'Cabin', sans-serif;
+	font-size: 1.20rem;
+	padding-bottom: .25rem;
+}
+.second p{
+	color: #e6dee9;
+	padding: 0 0 .5rem .5rem;
+}
+.mission{
+	padding: .75rem;
+	background-color: #000;
+	margin-bottom: .25rem;
+}
+.clients{
+	padding: .75rem;
+	background-color: #000;
+	margin-bottom: .25rem;
+}
+.services{
+	padding: .75rem;
+	background-color: #000;
+}
+.fa-check-circle, .fa-users, .fa-laptop {
+	color: #502847;
+}
+
+/* OUR TEAM */
+.bio1{
+	padding: 0 .75rem 1rem .75rem;
+	border-bottom: 2px solid rgba(126, 95, 148, 0.45);
+	margin-bottom: .25rem;
+}
+.bio1 a, .bio2 a, .bio3 a {
+	font-size: .85rem;
+}
+.bio1 p, .bio2 p, .bio3 p {
+	margin-top: .5rem;
+}
+.bio2{
+	padding: 0 .75rem 1rem .75rem;
+	border-bottom: 2px solid rgba(126, 95, 148, 0.45);
+	margin-bottom: .25rem;
+}
+.bio1 h4 {
+	color: #502847;
+}
+.bio2 h4, .bio3 h4{
+	color: #502847;
+	margin-top: 1rem;
+}
+.bio3{
+	padding: 0 .75rem;
+}
+.bio1 img, .bio2 img, .bio3 img{
+	width: 55%;
+	float: left;
+	margin: .75rem .5rem 0 0;
+}
+.third h3{
+	color: #333;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 1.5rem;
+	padding-bottom: .5rem;
+	margin-top: 1rem;
+}
+.third h4{
+	font-family: 'Cabin', sans-serif;
+	font-size: 1.2rem;
+	margin-bottom: .5rem;
+}
+/* email icons in bio section */
+.fa-envelope {
+	font-size: .90rem;
+	color: #502847;
+}
+
+
+/* CONTACT INFO */
+.contact{
+	text-align: center;
+	margin: 1.5rem .5rem 1rem .5rem;
+}
+.contact h5{
+	color: #fff;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 1.15rem;
+	padding: .5rem 0 0 .5rem;
+}
+.contact p{
+	color: #e6dee9;
+	font-size: .85rem;
+	padding: .5rem 1rem;
+}
+.contactlinks {
+	color: #fff;
+	padding: 0 1rem 1rem 1rem;
+}
+.phone, .envelope {
+	margin-right: .5rem;
+}
+/* email, phone, and address icons in contact section */
+.fa-phone, .fa-envelope, .fa-building {
+	font-size: .95rem;
+	color: #502847;
+}
+.contact a{
+	font-size: .85rem;
+}
+
+/* FOOTER */
+footer{
+	color: #333;
+	background-color: #000;
+	padding: 1rem;
+	font-size: .90rem;
+	margin-top: 1rem;
+}
+
+
+
+
+
+/* Styling for TABLET/DESKTOP here: */
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 480px) {
+	html{
+		font-size: 110%;
+	}
+	.intro-stuff img {
+		width: 50%;
+		margin-left: .5rem;
+		float: right;
+	}
+	.bio1 img, .bio2 img, .bio3 img{
+		width: 35%;
+		float: left;
+	}
+	.calltoaction {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	html {
+		font-size: 115%;
+	}
+	header {
+		padding-top:1rem;
+	}
+	/* header logo flex */
+	.header-container {
+		display: flex;
+	}
+	.logo {
+		flex: 1;
+	}
+	.headertext {
+		flex: 2;
+	}
+	/* nav flex */
+	.nav-container {
+		display: flex;
+		flex-flow: row nowrap;
+	}
+	nav ul li {
+		flex: 1;
+	}
+	/* what we offer flex */
+	.second-container {
+		display: flex;
+		flex-flow: row nowrap;
+	}
+	.mission, .clients, .services {
+		flex: 1;
+	}
+	.services {
+		margin-bottom: .25rem;
+	}
+	.mission {
+		margin-right: .25rem;
+	}
+	.clients {
+		margin-right: .25rem;
+	}
+	/* haven and marita bio flex */
+	.bio-container {
+		display: flex;
+		flex-flow: row nowrap;
+	}
+	.bio2 {
+		flex: 1;
+		border-bottom: none;
+		border-right: 2px solid rgba(126, 95, 148, 0.45);
+	}
+	.bio3 {
+		padding-left: 1rem;
+		flex: 1;
+	}
+	.bio1 {
+		margin-bottom: 1.5rem;
+	}
+	.bio1 img, .bio2 img, .bio3 img{
+		width: 35%;
+		float: left;
+	}
+	.bio1 img {
+		width: 20%;
+		float: left;
+	}
+	.second p {
+		font-size: .9rem;
+	}
+	.intro-stuff img {
+		float: right ;
+	}
+
+}
+
+@media screen and (min-width: 960px) {
+	html{
+		font-size: 120%;
+	}
+	.contact {
+		margin: 0 auto;
+		width: 50%;
+	}
+	.bio2 img, .bio3 img{
+		width: 40%;
+		float: left;
+	}
+	.bio1 img {
+		width: 20%;
+		float: left;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	html{
+		font-size: 125%;
+	}
+	body {
+		box-shadow: 5px 5px 5px #000;
+		width: 1100px;
+		margin: 0 auto;
+	}
+	.bio2 img, .bio3 img{
+		width: 32%;
+		float: left;
+	}
+	.bio1 img {
+		width: 15%;
+		float: left;
+	}
+}
